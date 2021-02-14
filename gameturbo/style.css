@@ -1,0 +1,94 @@
+
+.game{
+    width: 1950px;
+    height: 1050px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    background-image:url(img/ground.png);
+    background-color: #F6F6F6;
+}
+.oblaka{
+    width:1950px;
+    height:300px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+    background-image:url(img/oblaka.png);
+    position: relative;
+    top: 800px;
+    left: 1000px;
+    background-color: #F6F6F6;
+    
+  
+}
+#ford{
+    width:300px;
+    height:225px;
+    background-image: url(img/ford.png);
+    background-size: 300px 225px;
+    position: relative;
+    top: 800px;
+    left: 800px;
+}
+#cactus {
+    width:1950px;
+    height:300px;
+    background-image:url(img/oblaka.png);
+    background-size: 1950px 300px;
+    position: relative;
+    top: 250px;
+    left: 1080px;
+    animation: cactusMov 80s infinite linear;
+}
+#kust {
+    width: 250px;
+    height: 200px;
+    background-image:url(img/priora.png);
+    background-size: 250px 200px;
+    position: relative;
+    top: 90px;
+    left: 580px;
+    animation: kustMov 3s infinite linear;
+}
+
+@keyframes cactusMov {
+    0%{
+        left: 1980px;
+    }
+    100%{
+        left: -1980px;
+    }
+}
+@keyframes kustMov {
+    0%{
+        left: 860px;
+        top:90px;
+        width: 50px;
+        height: 50px;
+    }
+    100%{
+        left: -20px;
+        top: 450px;
+    
+}
+}
+.jump {
+    animation: jump 0.8s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 100px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top:100px;
+    }
+    100%{
+        top: 150px;
+    }
+}
